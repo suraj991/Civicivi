@@ -2,6 +2,8 @@
 
 **Government data tells us what happened. CiviCivi tells you what it means for *you*.**
 
+> Live site: **[civicivi.vercel.app](https://civicivi.vercel.app)**
+
 CiviCivi is a civic tech web app that takes US government bills and explains exactly how they affect your personal life — your wallet, job, healthcare, housing, and more — based on your specific situation.
 
 No more reading confusing bill summaries. Tell us who you are, and we'll tell you what the law means for you.
@@ -133,12 +135,16 @@ You'll never see a broken page — the app silently falls back to safe defaults.
 
 ## Deploying
 
-The easiest way to deploy is [Vercel](https://vercel.com):
+The app is live at **[civicivi.vercel.app](https://civicivi.vercel.app)**.
+
+To deploy your own instance on [Vercel](https://vercel.com):
 
 1. Push this repo to GitHub
 2. Import it on vercel.com
 3. Add your environment variables in the Vercel dashboard
-4. Deploy — it's live
+4. Deploy — it goes live in ~2 minutes
+
+> **Note:** The repo includes a `.npmrc` file with `legacy-peer-deps=true` which is required for Vercel's build to succeed due to React 19 peer dependency conflicts.
 
 ---
 
