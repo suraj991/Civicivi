@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import USAMapSection from "@/components/map/USAMapSection";
 import { ArrowRight, Zap, Shield, Volume2, BarChart3, Users, ChevronRight } from "lucide-react";
 import { MOCK_BILLS } from "@/lib/mockData";
 
@@ -151,6 +152,9 @@ export default function HomePage() {
             <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent" />
           </div>
         </section>
+
+        {/* Interactive USA Map */}
+        <USAMapSection />
 
         {/* Trending Bills Preview */}
         <section className="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
