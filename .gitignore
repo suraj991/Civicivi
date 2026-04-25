@@ -1,6 +1,4 @@
 # local workspace
-.claude/
-.vscode/
 .DS_Store
 
 # dependencies
